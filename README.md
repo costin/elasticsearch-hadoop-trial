@@ -1,6 +1,7 @@
 # elasticsearch-hadoop-trial
 
-Experiment in using ElasticSearch with Cascading and Cascalog
+Experiment/Example of using Elasticsearch Hadoop with Cascading and Cascalog
+Forked from [here](http://github.com/jeroenvandijk/elasticsearch-hadoop-trial)
 
 ## Usage
 
@@ -15,26 +16,27 @@ Install Leiningen
 ## Run scripts
 
 ### Cascading versions
-(adopted from https://github.com/elasticsearch/elasticsearch-hadoop#cascading)
-
-Input works, but exception at the end, see [output](https://github.com/jeroenvandijk/elasticsearch-hadoop-trial/blob/master/src/trial/input.clj)
+Feeding data to ES
     
-    lein run -m trial.input
+    lein run -m [trial.input](src/trial/input.clj)
 
-Ouptut works perfectly, see [output](https://github.com/jeroenvandijk/elasticsearch-hadoop-trial/blob/master/src/trial/output.clj)
-    
-    lein run -m trial.output
+[Result](http://gist.github.com/costin/7984824#file-1-trial-input)
+Reading data from ES
 
+    lein run -m [trial.output](src/trial/output.clj)
+
+[Result](http://gist.github.com/costin/7984824#file-2-trial-output)	
 ### Cascalog versions
-
-Input works perfectly, see [output](https://github.com/jeroenvandijk/elasticsearch-hadoop-trial/blob/master/src/trial/cascalog/input.clj)
+Feeding data to ES
     
-    lein with-profile cascalog run -m trial.cascalog.input
+    lein with-profile cascalog run -m [trial.cascalog.input](src/trial/cascalog/input.clj)
 
-Ouptut doesn't work, see [output](https://github.com/jeroenvandijk/elasticsearch-hadoop-trial/blob/master/src/trial/cascalog/output.clj)
+[Result](http://gist.github.com/costin/7984824#file-3-trial-cascalog-input)
+Reading data from ES
     
-    lein with-profile cascalog run -m trial.cascalog.output
+    lein with-profile cascalog run -m [trial.cascalog.output](src/trial/cascalog/output.clj)
 
+[Result](http://gist.github.com/costin/7984824#file-5-trial-cascalog-output)	
 ## License
 
 Copyright © 2013 FIXME
