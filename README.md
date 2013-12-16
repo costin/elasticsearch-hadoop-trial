@@ -16,21 +16,21 @@ Install Leiningen
 ## Run scripts
 
 ### Cascading versions
-Feeding data to ES - [source](src/trial/input.clj) [result](http://gist.github.com/costin/7984824#file-1-trial-input)
+Feeding data to ES - [source](src/trial/input.clj)/[output](http://gist.github.com/costin/7984824#file-1-trial-input)
 
     lein run -m trial.input
 
-Reading data from ES - [source](src/trial/output.clj) [result](http://gist.github.com/costin/7984824#file-2-trial-output)	
+Reading data from ES - [source](src/trial/output.clj)/[output](http://gist.github.com/costin/7984824#file-2-trial-output)	
 
     lein run -m trial.output
 
 ### Cascalog versions
-Feeding data to ES - [source](src/trial/cascalog/input.clj) [result](http://gist.github.com/costin/7984824#file-3-trial-cascalog-input)
+Feeding data to ES - [source](src/trial/cascalog/input.clj)/[output](http://gist.github.com/costin/7984824#file-3-trial-cascalog-input)
 
     
     lein with-profile cascalog run -m trial.cascalog.input
 
-Reading data from ES - [source](src/trial/cascalog/output.clj) [result](http://gist.github.com/costin/7984824#file-5-trial-cascalog-output)	
+Reading data from ES - [source](src/trial/cascalog/output.clj)/[output](http://gist.github.com/costin/7984824#file-5-trial-cascalog-output)	
     
     lein with-profile cascalog run -m trial.cascalog.output
 
